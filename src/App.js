@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import ConsumerForm from './components/consumerForm/consumerForm';
 import {
   BrowserRouter as Router,
   Switch,
@@ -13,7 +14,8 @@ function App() {
     <BrowserRouter> 
     <Switch>
           <Route path="/consumerForm">
-            
+            <ConsumerForm>
+            </ConsumerForm>
           </Route>
           <Route path="/users">
           </Route>
