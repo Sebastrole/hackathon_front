@@ -1,19 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
 import ConsumerForm from './components/consumerForm/consumerForm';
+import ProducerForm from './components/producerForm/producerForm'
 import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link,
   BrowserRouter
 } from "react-router-dom";
 
 function App() {
   return (
-    <BrowserRouter> 
+    <Router> 
     <Switch>
-          <Route path="/consumerForm">
+          <Route path="/producerForm">
+            <ProducerForm />
+          </Route>
+          <Route path="/consumerForm/:id">
             <ConsumerForm>
             </ConsumerForm>
           </Route>
@@ -31,7 +33,7 @@ function App() {
              }
           </Route>
         </Switch>
-    </BrowserRouter> 
+    </Router> 
   );
 }
 

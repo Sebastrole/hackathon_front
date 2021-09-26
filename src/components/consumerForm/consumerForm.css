@@ -3,8 +3,144 @@
     margin: 0%;
 }
 
-.container {
-    width: 100%;
-    height: 100vh;
-    background-color: black;
+#consumerFormContainer{
+    width:100%;
+    font-family: 'Mukta' !important;
+    min-height: 100vh;
+    background: linear-gradient(90deg, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0.9) 35%, rgba(255,255,255,0.9) 75%, rgba(255,255,255,0.9) 100%), url('../../assets/background-min.jpg');
 }
+#consumerFormContainer .brandContainer {
+    width: 50%;
+    margin:auto;
+    display:flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+#consumerFormContainer .brandContainer img{
+    width: 400px;
+    margin: auto;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+#consumerFormContainer hr{
+    background: #207247;
+    height: 2px;
+    border: none;
+}
+#consumerFormContainer h2{
+    color: #207247;
+    margin:auto;
+    text-align:justify;
+    font-size: 33px;
+    line-height: 1.4;
+    width: 70%;
+}
+
+#consumerFormContainer .form{
+    background: #207247;
+    background-image: url('../../assets/coffee.png');
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    padding: 20px;
+    margin:auto;
+    width : 50%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#consumerFormContainer .form input{
+    display:flex;
+    width: 60%;
+    border-radius: 10px;
+    border: 1px solid black;
+    padding: 6px;
+    margin: 10px;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    font-family: 'Mukta';
+}
+
+*:focus {
+    outline: none;
+}
+
+#consumerFormContainer .form input[type='submit']{
+    display:flex;
+    width: 150px;
+    height:50px;
+    border-radius: 10px;
+    margin: 5px;
+    font-size: 20px;
+    font-family: 'Mukta';
+    justify-content: center;
+    background:none;
+    color: white;
+    border: 1px solid white;
+    transition: background ease-in-out 1s;
+}
+
+#consumerFormContainer .form input[type='submit']:hover{
+    cursor:pointer;
+    background: rgba(255,255,255,0.2);
+}
+
+#consumerFormContainer .form .audioContainer{
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+}
+
+#consumerFormContainer .form .audioContainer button{
+    margin:10px;
+}
+#consumerFormContainer .form .audioContainer .recordButton{
+    background: #F28B82;
+    border:none;
+    width: 50px;
+    height:50px;
+    border-radius: 50%;
+    border:1px solid #f85a4b;
+    transition: background ease 1s;
+}
+
+#consumerFormContainer .form .audioContainer .stopButton{
+    background: black;
+    border:none;
+    width: 50px;
+    height:50px;
+}
+
+#consumerFormContainer .form .audioContainer button:disabled,
+#consumerFormContainer .form .audioContainer button[disabled]{
+  background-color: rgba(255,255,255,0.2);
+}
+
+#consumerFormContainer .form .audioContainer button:disabled:hover,
+#consumerFormContainer .form .audioContainer button[disabled]:hover{
+  cursor:default;
+}
+
+#consumerFormContainer .form .audioContainer .stopButton:hover{
+    cursor: pointer;
+}
+
+#consumerFormContainer .form .audioContainer .recordButton:hover{
+    cursor: pointer;
+    background: #f16659;
+}
+.yellow{
+    color : #FFCD00;
+}
+
+.blue{
+    color: #003087;
+}
+
+.red{
+    color: #C8102E;
+}
+
