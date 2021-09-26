@@ -1,6 +1,7 @@
 import './App.css';
 import ConsumerForm from './components/consumerForm/consumerForm';
-import ProducerForm from './components/producerForm/producerForm'
+import ProducerForm from './components/producerForm/producerForm';
+import Home from './components/home/home';
 import {
   BrowserRouter as Router,
   Switch,
@@ -12,6 +13,9 @@ function App() {
   return (
     <Router> 
     <Switch>
+          <Route path="/home">
+            <Home/>
+          </Route>
           <Route path="/producerForm">
             <ProducerForm />
           </Route>
