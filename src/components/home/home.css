@@ -124,13 +124,17 @@ h1{
 
 .textwiththanks {
     border-radius: 10px;
-    padding:10px;
+    font-size:28px;
 }
 
 .textwiththanks .first-line{
     color: rgb(33, 115, 73);
     font-weight: 600;
     background: rgba(220, 151, 81,0.8);
+    padding:10px;
+}
+
+.textwiththanks .second-line{
     padding:10px;
 }
 
