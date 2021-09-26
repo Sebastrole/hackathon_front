@@ -1,3 +1,76 @@
-#containerProducerForm{
-    background : linear-gradient(90deg, rgba(255,255,255,0.5) 0%, rgba(255,255,255,0.5) 35%, rgba(244,244,244,0.5) 75%, rgba(235,233,233,0.5) 100%) url('./components/producerForm.js')
+#producerViewContainer{
+    padding: 20px;
+}
+
+.logodiv {
+    display: flex;
+    justify-content: center;
+    padding-top: 5px;
+}
+
+.centerline {
+    display: flex;
+    justify-content: center;
+}
+
+.line {
+    background-color: rgb(32, 114, 71);
+    color: rgb(32, 114, 71,0%);
+    width: 30%;
+    height: 4px;
+}
+
+.navbar {
+    left: 0%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 40px 100px;
+    z-index: 100000;
+}
+
+.navbar .donateButton {
+    font-size: 28px;
+    padding: 7px 15px 7px 15px;
+    color: rgb(220, 151, 81);
+    font-weight: 800;
+    position: relative;
+    font-weight: 1000px;
+    text-decoration: none;
+    border-radius: 10px;
+    border: solid;
+    transition: 0.6s;
+}
+
+.navbar .donateButton:hover{
+    background :rgba(250, 185, 121, 0.2);
+}
+
+.navbar ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar ul li {  
+    position: relative;
+    list-style: none;
+}
+
+.navbar ul li a {  
+    font-size: 28px;
+    position: relative;
+    margin: 0 100px;
+    text-decoration: none;
+    color: rgb(32, 114, 71);
+    letter-spacing: 2px;
+    font-weight: 1000;
+    transition: border ease-in-out 1s;
+}
+
+.navbar ul li a:hover{
+    border-bottom: 1px solid rgb(32, 114, 71);
 }

@@ -7,6 +7,7 @@
 .homeContainer {
     font-family: 'Mukta' !important;
     background-color: white;
+    padding: 20px;
 }
 
 
@@ -39,6 +40,20 @@
     z-index: 100000;
 }
 
+p{
+    font-family: "Mukta";
+    font-size: 28px;
+    font-weight: 300;
+    color:white;
+}
+
+h1{
+    font-family: "Mukta";
+    font-size: 48px;
+    font-weight: 600;
+    color:white;
+}
+
 .navbar .donateButton {
     padding: 7px 15px 7px 15px;
     color: rgb(220, 151, 81);
@@ -67,7 +82,7 @@
     position: relative;
     margin: 0 100px;
     text-decoration: none;
-    color: rgb(32, 114, 71);
+    color: rgb(33, 115, 73);
     letter-spacing: 2px;
     font-weight: 1000;
     transition: 0.6s;
@@ -77,10 +92,12 @@
     position: relative;
     width: 100%;
     height: 100vh;
-    background: linear-gradient(180deg, #E5E5E5 77.08%, rgba(229, 229, 229, 0) 100%);
+    background: linear-gradient(180deg, rgba(33, 115, 73, 0.8) 77.08%, rgba(54, 187, 118, 0.8) 100%), url('../../assets/background-min.jpg');
+    background-attachment: fixed;
     font-weight: 1000;
     padding-top: 55px;
     font-size: 20px;
+    border-radius: 10px;
 }
 
 .containerimgsanduser {
@@ -106,7 +123,19 @@
 }
 
 .textwiththanks {
-    color: rgb(32, 114, 71);
+    border-radius: 10px;
+    font-size:28px;
+}
+
+.textwiththanks .first-line{
+    color: rgb(33, 115, 73);
+    font-weight: 600;
+    background: rgba(220, 151, 81,0.8);
+    padding:10px;
+}
+
+.textwiththanks .second-line{
+    padding:10px;
 }
 
 .origin {
@@ -117,7 +146,28 @@
 .scrollimgs {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-right: 100px;
     margin-left: 100px;
     margin-top: 50px;
+}
+
+.img1scroll{
+    width:200px;
+}
+
+.img2scroll{
+    width: 300px;
+}
+
+.img3scroll{
+    width: 400px;
+}
+
+.img4scroll{
+    width: 300px;
+}
+
+.img5scroll{
+    width: 200px;
 }

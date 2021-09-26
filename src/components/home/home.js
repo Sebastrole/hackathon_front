@@ -49,7 +49,7 @@ const Home = () => {
                     <br />
                     <br />
                     <p className="textwiththanks"> 
-                    Queremos agradecerte por haberte tomado el tiempo de haber llegado <br/> a este punto, y apoyar con tu compra a las familias cafeteras del CAUCA
+                    <span className="first-line">Queremos agradecerte por haberte tomado el tiempo de haber llegado</span> <br/> <span className="second-line">a este punto, y apoyar con tu compra a las familias cafeteras del CAUCA</span>
                     </p>
                 </p>
                 </div>

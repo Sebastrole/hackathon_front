@@ -28,12 +28,14 @@
     height: 2px;
     border: none;
 }
-#consumerFormContainer h2{
-    color: #207247;
+#consumerFormContainer .announcement{
+    color: black;
     margin:auto;
+    font-size: 22px;
     text-align:justify;
     font-size: 33px;
     line-height: 1.4;
+    font-weight: 300;
     width: 70%;
 }
 
@@ -114,6 +116,29 @@
     height:50px;
 }
 
+#consumerFormContainer .form .loadingPoints{
+    font-size:32px;
+    color: white;
+    font-weight: 600;
+}
+
+#consumerFormContainer .form .loadingPoints{
+    animation: fade 1.5s infinite 100ms;
+}
+
+#consumerFormContainer .form textarea{
+    display:flex;
+    width: 60%;
+    border-radius: 10px;
+    border: 1px solid black;
+    padding: 6px;
+    margin: 10px;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    font-family: 'Mukta';
+}
+
 #consumerFormContainer .form .audioContainer button:disabled,
 #consumerFormContainer .form .audioContainer button[disabled]{
   background-color: rgba(255,255,255,0.2);
@@ -124,11 +149,11 @@
   cursor:default;
 }
 
-#consumerFormContainer .form .audioContainer .stopButton:hover{
+#consumerFormContainer .form .audioContainer .stopButton:enabled:hover{
     cursor: pointer;
 }
 
-#consumerFormContainer .form .audioContainer .recordButton:hover{
+#consumerFormContainer .form .audioContainer .recordButton:enabled:hover{
     cursor: pointer;
     background: #f16659;
 }
@@ -142,5 +167,15 @@
 
 .red{
     color: #C8102E;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: 1;}
+    to {opacity: 0;}
+} 
+
+@keyframes fade {
+    from {opacity: 1;}
+    to {opacity: 0;}
 }
 
